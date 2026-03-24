@@ -36,6 +36,7 @@ public class ProductController {
             product.setName(productDetails.getName());
             product.setDescription(productDetails.getDescription());
             product.setPrice(productDetails.getPrice());
+            product.setImageUrl(productDetails.getImageUrl());
             return ResponseEntity.ok(productRepository.save(product));
         }).orElseGet(() -> ResponseEntity.notFound().build());
     }

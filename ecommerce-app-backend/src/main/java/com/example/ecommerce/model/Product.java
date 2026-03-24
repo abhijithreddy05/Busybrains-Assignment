@@ -24,4 +24,7 @@ public class Product {
 
     @Column(nullable = false)
     private BigDecimal price;
+
+    @Column(length = 1000)
+    private String imageUrl;
 }
